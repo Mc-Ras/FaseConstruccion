@@ -27,13 +27,22 @@
 						<a class="nav-link" href="index.html">Inicio</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="seccion2.html">Seccion 2</a>
+						<a class="nav-link" href="seccion1.html">Lectura 1</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="seccion3.html">Seccion 3</a>
+						<a class="nav-link" href="seccion2.html">Lectura 2</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="seccion4.html">Seccion 4</a>
+						<a class="nav-link" href="seccion3.html">Lectura 3</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="seccion4.html">Lectura 4</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="seccion5.html">Lectura 5</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="actividades.html">Actividades</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="acerca.html">Acerca de</a>
@@ -45,11 +54,43 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 text-justify">
-				<h2>Actividades Didacticas</h2>
+				<h2>Orden SELECT</h2>
+				
+				<p>Para que el programa gestor de MySQL nos entregue un conjunto de datos, deberemos aprender a decírselo de forma que nos comprenda y, para ello, utilizaremos órdenes del lenguaje SQL (Structured Query Language o lenguaje de consultas estructurado).</p>
+				
+				<p>En este caso que necesitaremos leer datos de una tabla, la orden será SELECT (seleccionar). Mediante esta orden, le pediremos al gestor de MySQL que nos entregue exactamente aquellos que queremos mostrar en nuestras páginas.</p>
+				
+				<p>La sintaxis básica de la orden SELECT es la siguiente:</p>
+				
+				<p><b>SELECT campo1, campo2, campo3, FROM tabla</b></p>
+				
+				<p>Esto se traducirá como "Seleccionar los campos indicados, de la tabla indicada".</p>
+				
+				<p>Con un ejemplo será más que simple entender su uso:</p>
+				
+				<p><b>SELECT nombre, email FROM mensajes</b></p>
+				
+				<p>Esta orden seleccionará los campos (columnas) nombre y email a través de todos los registros de nuestra tabla denominada mensajes.</p>
+				
+				<p>Es decir, devolverá todos los registros (filas) de la tabla, pero "cortados" verticalmente, extrayendo sólo las dos columnas solicitadas (nombre y email), en consecuencia, nos llegaría lo siguiente (podemos insertar varios registros antes de hacer esto):</p>
+				
+				<div align="left" style="margin-bottom: 30px;"><img src="img/codigos/imagen4.jpeg" width="auto" height="70"></div>
 
-				<p>Prueba tus conocimintos con el siguiente Crucigrama!</p>
+				<p>Si en cambio quisiéramos traer "todos los campos" de la tabla (tarea muy frecuente y, que en caso de tener muchos campos la tabla, podría resultar bastante tedioso completar sus nombres uno por uno) podemos utilizar un carácter que cumple las funciones de comodín para simbolizar "todos los campos de la tabla".</p>
+				
+				<p>Este carácter es el asterisco, con el cual la orden quedaría:</p>
+				
+				<p><b>SELECT * FROM mensajes</b></p>
+				
+				<p>Esta orden traería todas las columnas (campos) de la tabla mensajes (y, desde ya, todos los registros también):</p>
 
-				<iframe src='https://es.educaplay.com/es/recursoseducativos/3802491/html5/vinculacion_de_bd_a_php.htm' width='795' height='690' frameborder='0'></iframe><a href='https://es.educaplay.com/es/recursoseducativos/3802491/vinculacion_de_bd_a_php.htm'>vinculacion de BD a PHP</a>
+				<div align="center" style="margin-bottom: 30px;"><img src="img/codigos/imagen5.jpeg" width="auto" height="170"></div>
+
+				<p>Resumiendo, para finalizar este segundo paso, podemos almacenar la orden SQL en una variable (hasta el momento en que la necesitemos):</p>
+
+				<div align="left" style="margin-bottom: 30px;"><img src="img/codigos/imagen6.jpeg" width="auto" height="65"></div>
+
+				<p>Ahora que tenemos preparada nuestra orden SQL, es momento de pasar al tercer paso y hacer que el intérprete PHP se la envíe al gestor de MySQL, obteniendo alguna respuesta.</p>
 
 			</div>
 
@@ -61,13 +102,22 @@
 							<a class="nav-link" href="index.html">Inicio</a>
 						</li>
 						<li>
-							<a class="nav-link" href="seccion2.html">Seccion 2</a>
+							<a class="nav-link" href="seccion1.html">Lectura 1</a>
 						</li>
 						<li>
-							<a class="nav-link" href="seccion3.html">Seccion 3</a>
+							<a class="nav-link" href="seccion2.html">Lectura 2</a>
 						</li>
 						<li>
-							<a class="nav-link" href="seccion4.html">Seccion 4</a>
+							<a class="nav-link" href="seccion3.html">Lectura 3</a>
+						</li>
+						<li>
+							<a class="nav-link" href="seccion4.html">Lectura 4</a>
+						</li>
+						<li>
+							<a class="nav-link" href="seccion5.html">Lectura 5</a>
+						</li>
+						<li>
+							<a class="nav-link" href="actividades.html">Actividades</a>
 						</li>
 						<li>
 							<a class="nav-link" href="acerca.html">Acerca de</a>
